@@ -1,0 +1,16 @@
+apply from: '../config/common_gradle.gradle'
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //加号替换为jitpack版本号
+    compile dep.okgo
+    compile dep.appcompat
+    compile dep.design
+    //沉浸式状态栏
+    compile dep.barlibrary
+    compile dep.gson
+    compile dep.rxjava2
+    compile dep.rxandroid2
+    compile dep.acp
+    compile dep.glide
+    compile dep.AndroidSpinKit
+}
